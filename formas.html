@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagen </title>
+    <style>
+        html, body{
+            background-color: #5cdf1f;
+            font-family: arial ,sans-serif;
+            color: #ee4630;
+        }
+        img,h1{
+            display: inline-block;
+            font-size: 60px;
+
+        }
+        container {
+            width: 90px;
+            margin: 0px auto;
+            display: block;
+
+        }
+        .diamante{
+            display: inline-block ;     
+            border-style: solid;
+            border-color: transparent transparent red transparent;
+            border-width: 0 25px 25px 25px;
+            height: 0;
+            width: 50px;
+            position: relative;
+            margin: 20px 0 50px 0;
+
+        }
+        .diamante:after{
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: -25px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-color: red transparent transparent transparent;
+            border-width: 70px 50px 0px 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <container>
+        <div class="diamante "></div>
+        <h1>Hola mundo </h1>
+    </container>
+    
+</body>
+</html>
